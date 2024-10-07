@@ -9,10 +9,7 @@ int main(int argc, char const *argv[])
     int soma = 0;
     int vetor[] = {0};
 
-    while(cin >> a >> b){
-        if(a == 0 && b ==0){
-            break;
-        }
+    while((cin >> a >> b) && (a != 0 || b != 0)){
 
         soma = a + b;
 
@@ -21,9 +18,9 @@ int main(int argc, char const *argv[])
             soma /= 10;
         }
 
-        for (i = 0; i < 11; i++){
+        for (i = 10; i >= 0; i--){
             if( vetor[i] != 0){
-                cout << vetor[i] << endl;
+                cout << vetor[i];
             }
         }
         cout << endl;
