@@ -22,7 +22,7 @@ int main() {
 	printf("Nome: ");
 
 	/* Não existe a possibilidade de buffer overflows utilizando esse código */
-	lerStringSeguramente(string, sizeof(string));
+	//lerStringSeguramente(string, sizeof(string));
 	if(lerStringSeguramente(string, sizeof(string)) != NULL) {
 		printf("Seu nome é %s\n", string);
 	} else {
